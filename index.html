@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पायथन सोवरेन ऑर्गनाइजेशन (PSO) | किसी के जकड़ में नहीं आता</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="पायथन सोवरेन ऑर्गनाइजेशन (PSO) एक स्वतंत्र तकनीकी और वैचारिक आंदोलन है जो मुफ़्त शिक्षा, संवैधानिक अधिकार और एआई ड्रोन सुरक्षा नेटवर्क के जरिए जनता को सशक्त बनाता है।">
+    <meta name="keywords" content="python sovereign organisation, pso, pso manifesto, muft shiksha, root access, autonomous security grid">
+    <meta property="og:title" content="Python Sovereign Organisation | आधिकारिक घोषणापत्र">
+    <meta property="og:description" content="तर्क और अधिकार, डर के ऊपर। वास्तविक हुनर, कागजी किताबों के ऊपर।">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['"Space Grotesk"', 'sans-serif'],
+                        'mono': ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #050505;
+            color: #e4e4e7;
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Tactical Grid Background */
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+        /* Download Button Tactical Border Animation */
+        .btn-tactical {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-tactical::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        .btn-tactical:hover::before {
+            left: 100%;
+        }
+
+        /* Gold Glow for Badge */
+        .badge-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.3));
+            transition: filter 0.3s ease;
+        }
+        .badge-glow:hover {
+            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.6));
+        }
+    </style>
+
+    <!-- Web App & Favicon Links -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Python Sovereign Organisation",
+      "alternateName": "PSO",
+      "description": "An independent digital movement providing free technology education, legal rights awareness, and blueprinting open-source autonomous security AI grids.",
+      "slogan": "तर्क और अधिकार, डर के ऊपर।"
+    }
+    </script>
+</head>
+<body class="grid-bg">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#050505]/80 backdrop-blur-md border-b border-zinc-800/50">
+        <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- Black & White Logo Integration -->
+                <img src="assets/pso_logo.jpeg" alt="PSO Logo" class="h-12 w-12 object-contain rounded-full border border-zinc-700 p-0.5">
+                <span class="font-display font-bold tracking-wider text-sm hidden md:block">PYTHON SOVEREIGN</span>
+            </div>
+            <div class="flex items-center gap-6 font-mono text-xs tracking-widest text-zinc-400">
+                <a href="#manifesto" class="hover:text-white transition-colors">MANIFESTO</a>
+                <a href="#security" class="hover:text-white transition-colors hidden md:block">SECURITY</a>
+                <a href="PSO_Manifesto_Presentation.pdf" download class="border border-white px-4 py-2 text-white hover:bg-white hover:text-black transition-all flex items-center gap-2">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    DOWNLOAD
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pt-28 pb-24">
+
+        <!-- Hero Section -->
+        <section class="min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-12 border-b border-zinc-800 pb-20 reveal">
+            <div class="md:w-1/2 space-y-6">
+                <div class="font-mono text-xs tracking-[0.3em] text-zinc-500 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span> SYSTEM ACTIVE // ROOT ACCESS GRANTED
+                </div>
+                <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tighter uppercase leading-[0.9]">
+                    किसी के जकड़<br>में <span class="text-zinc-500">नहीं आता।</span>
+                </h1>
+                <p class="max-w-xl text-lg text-zinc-400 leading-relaxed">
+                    "कॉकरोच न्यूक्लियर अटैक से बच सकता है, पर पायथन ऐसी चीज़ है जो किसी के जकड़ में नहीं आता।"
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-start gap-4 pt-4">
+                    <a href="PSO_Manifesto_Presentation.pdf" download class="btn-tactical inline-flex items-center gap-3 border-2 border-white bg-white text-black px-8 py-4 font-display font-bold tracking-wider uppercase hover:bg-transparent hover:text-white transition-all duration-300 group">
+                        <svg class="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download Manifesto
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Large B&W Logo for Hero Visual -->
+                <img src="assets/pso_logo.jpeg" alt="Python Sovereign Organisation" class="max-h-[400px] w-auto object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:scale-105 transition-transform duration-700 rounded-lg border border-zinc-800 p-2">
+            </div>
+        </section>
+
+        <!-- Core Mottos -->
+        <section class="py-24 grid md:grid-cols-3 gap-6 reveal">
+            <!-- Card 1 -->
+            <div class="border border-zinc-800 p-8 hover:border-zinc-500 transition-all duration-300 group relative overflow-hidden bg-[#050505]">
+                <div class="absolute top-0 right-0 w-12 h-12 border-b border-l border-zinc-800 group-hover:border-zinc-500 transition-colors"></div>
+                <svg class="w-8 h-8 mb-6 text-zinc-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h3 class="font-display text-2xl font-bold mb-3">मुफ़्त शिक्षा</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">किताबों का रट्टा छोड़ो। इंटरनेट पर उपलब्ध असीमित और मुफ़्त टूल्स से वास्तविक तकनीकी हुनर हासिल करो। पैसों की गुलामी खत्म।</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="border border-zinc-800 p-8 hover:border-zinc-500 transition-all duration-300 group relative overflow-hidden bg-[#050505]">
+                <div class="absolute top-0 right-0 w-12 h-12 border-b border-l border-zinc-800 group-hover:border-zinc-500 transition-colors"></div>
+                <svg class="w-8 h-8 mb-6 text-zinc-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <h3 class="font-display text-2xl font-bold mb-3">पूर्ण आज़ादी</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">बिना वजह किसी भी वर्दी या ऊंची कुर्सी से डरना बंद करो। अपने कानूनी और संवैधानिक अधिकारों को मजबूती से जानो।</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="border border-zinc-800 p-8 hover:border-zinc-500 transition-all duration-300 group relative overflow-hidden bg-[#050505]">
+                <div class="absolute top-0 right-0 w-12 h-12 border-b border-l border-zinc-800 group-hover:border-zinc-500 transition-colors"></div>
+                <svg class="w-8 h-8 mb-6 text-zinc-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 2-4 2M6 8l-4 2 4 2"></path></svg>
+                <h3 class="font-display text-2xl font-bold mb-3">स्व-निर्भरता</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">बिना किसी बाहरी सिफारिश या "सर, सर" संस्कृति के, अपने लॉजिक और काबिलियत के दम पर खुद का सिस्टम खड़े करो।</p>
+            </div>
+        </section>
+
+        <!-- Official Manifesto Section -->
+        <section id="manifesto" class="py-24 border-t border-b border-zinc-800 reveal">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-2 h-8 bg-white"></div>
+                <h2 class="font-display text-3xl font-bold tracking-wider uppercase">आधिकारिक घोषणापत्र</h2>
+            </div>
+            
+            <div class="max-w-4xl space-y-8 text-zinc-300 leading-loose">
+                <p>
+                    पायथन सोवरेन ऑर्गनाइजेशन किसी राजनीतिक लाभ या चुनावी वोट बैंक के लिए नहीं बना है। यह एक स्वतंत्र वैचारिक और तकनीकी मंच है जिसका एकमात्र उद्देश्य हर उस नागरिक को आत्मनिर्भर और निडर बनाना है जिसे इस मौजूदा व्यवस्था ने पीछे छोड़ दिया है। हमारा मूल सिद्धांत स्पष्ट है: यह संगठन किसी के जकड़ में नहीं आता।
+                </p>
+                <p>
+                    आज की पारंपरिक शिक्षा व्यवस्था नागरिकों का सिर्फ पैसा बर्बाद कर रही है। छह किताबों का रट्टा मारकर परीक्षा पास करना और बड़ी-बड़ी डिग्रियों के लिए लाखों रुपये लुटाना आपको साक्षर बना सकता है, शिक्षित नहीं। दूसरी ओर, व्यवस्था ने लोगों को इतना डरा दिया है कि वे अपने बुनियादी अधिकार भूल चुके हैं।
+                </p>
+
+                <div class="border-l-2 border-white pl-6 py-2 my-10 bg-zinc-900/30">
+                    <p class="font-mono text-xs tracking-widest text-zinc-500 mb-3">IDEOLOGY & VISION // AI GRID</p>
+                    <p>
+                        हम खोखले वादों पर नहीं, बल्कि सीधे और अचूक तकनीकी समाधान पर काम करेंगे। सड़कों और डिवाइडरों पर ऐसे आधुनिक लो-लेटेंसी एआई कैमरा और स्वायत्त ड्रोन नेटवर्क का बुनियादी ढांचा तैयार किया जाएगा जो बिना किसी इंसानी आलस, डर या रिश्वत के, मौके पर ही अपराध को रोक सके।
+                    </p>
+                </div>
+
+                <p class="text-xl font-bold text-white tracking-wide">
+                    तर्क और अधिकार, डर के ऊपर।<br>
+                    वास्तविक हुनर, कागजी किताबों के ऊपर।
+                </p>
+
+                <!-- Ghosna Patra (Manifesto Document) Image Preview -->
+                <div class="my-16 border border-zinc-800 p-4 bg-zinc-950/50 flex flex-col items-center gap-6 reveal">
+                    <div class="font-mono text-xs tracking-widest text-zinc-500 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span> OFFICIAL DOCUMENT PREVIEW // DECRYPTED
+                    </div>
+                    <img src="assets/mudda.jpeg" alt="PSO Ghosna Patra" class="max-h-[600px] w-auto object-contain shadow-2xl border border-zinc-700 hover:scale-[1.02] transition-transform duration-500 cursor-pointer">
+                    
+                    <a href="PSO_Manifesto_Presentation.pdf" download class="btn-tactical inline-flex items-center gap-3 border-2 border-white bg-transparent text-white px-8 py-4 font-display font-bold tracking-wider uppercase hover:bg-white hover:text-black transition-all duration-300 group">
+                        <svg class="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download Full Manifesto
+                    </a>
+                    <p class="font-mono text-xs text-zinc-600 tracking-wider">FILE FORMAT: PDF // STATUS: PUBLIC ACCESS</p>
+                </div>
+
+                <!-- Gold Batch (Official Seal) -->
+                <div class="flex justify-end mt-8">
+                    <img src="assets/batch.jpeg" alt="PSO Official Badge" class="h-28 w-28 object-contain badge-glow rotate-[-6deg]">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Autonomous Security Section -->
+        <section id="security" class="py-24 grid md:grid-cols-2 gap-12 items-center reveal">
+            <div>
+                <div class="font-mono text-xs tracking-[0.3em] text-zinc-500 mb-4">TECHNOLOGICAL SOVEREIGNTY</div>
+                <h2 class="font-display text-4xl font-bold tracking-tight mb-6">स्वायत्त सुरक्षा<br>विज़न</h2>
+                <p class="text-zinc-400 leading-relaxed mb-6">
+                    पारंपरिक राजनेताओं के पास जनता की सुरक्षा को लेकर कोई ठोस विज़न नहीं है। अपराध होने के बाद केवल कागजी कार्रवाई होती है। PSO बदलेगा यह परिदृश्य। हमारा एआई और ड्रोन नेटवर्क इंसानी कमजोरियों (डर, रिश्वत, आलस) से मुक्त होगा।
+                </p>
+                <div class="flex gap-4 font-mono text-xs text-zinc-500">
+                    <span class="border border-zinc-800 px-3 py-1">LOW-LATENCY</span>
+                    <span class="border border-zinc-800 px-3 py-1">REAL-TIME</span>
+                    <span class="border border-zinc-800 px-3 py-1">ZERO-CORRUPTION</span>
+                </div>
+            </div>
+            <div class="border border-zinc-800 bg-zinc-900/20 h-80 flex items-center justify-center relative overflow-hidden group">
+                <div class="text-center z-10">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-zinc-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <p class="font-mono text-xs tracking-widest text-zinc-500">AUTONOMOUS GRID DEPLOYMENT</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Resources & Assets Index -->
+    <section class="border-t border-zinc-800 bg-zinc-950/30">
+        <div class="max-w-6xl mx-auto px-6 py-16">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-2 h-8 bg-white"></div>
+                <h2 class="font-display text-3xl font-bold tracking-wider uppercase">Resources</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Favicon & App Icons -->
+                <div>
+                    <h3 class="font-display text-xl font-bold mb-4 text-zinc-200">Favicon & App Icons</h3>
+                    <ul class="space-y-2 text-sm font-mono text-zinc-400">
+                        <li><a href="favicon.ico" class="hover:text-white transition-colors">→ favicon.ico</a></li>
+                        <li><a href="favicon-32x32.png" class="hover:text-white transition-colors">→ favicon-32x32.png</a></li>
+                        <li><a href="favicon-16x16.png" class="hover:text-white transition-colors">→ favicon-16x16.png</a></li>
+                        <li><a href="apple-touch-icon.png" class="hover:text-white transition-colors">→ apple-touch-icon.png</a></li>
+                        <li><a href="android-chrome-192x192.png" class="hover:text-white transition-colors">→ android-chrome-192x192.png</a></li>
+                        <li><a href="android-chrome-512x512.png" class="hover:text-white transition-colors">→ android-chrome-512x512.png</a></li>
+                    </ul>
+                </div>
+
+                <!-- Asset Images -->
+                <div>
+                    <h3 class="font-display text-xl font-bold mb-4 text-zinc-200">Asset Images</h3>
+                    <ul class="space-y-2 text-sm font-mono text-zinc-400">
+                        <li><a href="assets/pso_logo.jpeg" class="hover:text-white transition-colors">→ assets/pso_logo.jpeg</a></li>
+                        <li><a href="assets/mudda.jpeg" class="hover:text-white transition-colors">→ assets/mudda.jpeg</a></li>
+                        <li><a href="assets/batch.jpeg" class="hover:text-white transition-colors">→ assets/batch.jpeg</a></li>
+                    </ul>
+                </div>
+
+                <!-- Configuration -->
+                <div>
+                    <h3 class="font-display text-xl font-bold mb-4 text-zinc-200">Configuration</h3>
+                    <ul class="space-y-2 text-sm font-mono text-zinc-400">
+                        <li><a href="site.webmanifest" class="hover:text-white transition-colors">→ site.webmanifest</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-800 bg-[#050505]/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="font-mono text-xs text-zinc-600 tracking-widest text-center md:text-left">
+                &copy; 2026 PYTHON SOVEREIGN ORGANISATION <br>
+                <span class="text-zinc-700">NO RIGHTS RESERVED // OPEN SOURCE IDEOLOGY</span>
+            </div>
+            <div class="flex gap-6 font-mono text-xs text-zinc-500 tracking-wider">
+                <span>#PYTHONSOVEREIGN</span>
+                <span>#PSO</span>
+                <span>#ROOTACCESS</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Animation JS -->
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const reveals = document.querySelectorAll('.reveal');
+
+            const revealOnScroll = () => {
+                for (let i = 0; i < reveals.length; i++) {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = reveals[i].getBoundingClientRect().top;
+                    const elementVisible = 100;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add('active');
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', revealOnScroll);
+            // Trigger once on load
+            revealOnScroll();
+        });
+    </script>
+</body>
+</html>
